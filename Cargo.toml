@@ -1,0 +1,16 @@
+[package]
+name = "vidfix-detect"
+version = "0.1.0"
+edition = "2021"
+description = "Tell why an MP4/MOV will not open: missing moov (interrupted recording), fragmented, 0-byte, MPEG-TS. Reads only the head and tail of the file."
+license = "MIT OR Apache-2.0"
+homepage = "https://tensorust.com/fix-video/"
+keywords = ["mp4", "moov", "video", "repair", "corrupt"]
+categories = ["multimedia::video", "parser-implementations", "command-line-utilities"]
+readme = "README.md"
+
+[dependencies]
+
+[[bin]]
+name = "vidfix-detect"
+path = "src/main.rs"
